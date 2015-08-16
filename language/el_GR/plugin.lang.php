@@ -27,14 +27,13 @@ $lang['Save visit in history'] = 'Αποθήκευση επίσκεψης στη
 $lang['Save'] = 'Αποθήκευση';
 $lang['Revert'] = 'Επαναφορά';
 $lang['Quick edit'] = 'Γρήγορη επεξεργασία';
-$lang['Debug languages'] = 'Γλώσσες αποσφάτωσης';
-$lang['Debug template'] = 'Πρότυπο αποσφάτωσης';
+$lang['Debug languages'] = 'Γλώσσες αποσφαλμάτωσης';
+$lang['Debug template'] = 'Πρότυπο αποσφαλμάτωσης';
 $lang['Properties page'] = 'Ιδιότητες σελίδας';
 $lang['Combine JS&CSS'] = 'Συνδυάστε JS&amp;CSS';
 $lang['Saved'] = 'Αποθηκεύτηκε';
 $lang['right'] = 'δεξιά';
 $lang['left'] = 'αριστερά';
 $lang['Open toolbar by default'] = 'Ανοικτή γραμμή εργαλείων από προεπιλογή';
-$lang['Give access to quick edit to photo owners even if they are not admin'] = 'Δώστε πρόσβαση σε γρήγορη επεξεργασία στους ιδιοκτήτες φωτογραφιών, ακόμη και αν δεν το διαχειριστές ';
+$lang['Give access to quick edit to photo owners even if they are not admin'] = 'Δώστε πρόσβαση για γρήγορη επεξεργασία στους ιδιοκτήτες των φωτογραφιών, ακόμη και αν δεν είναι διαχειριστές ';
 $lang['Closed icon position'] = 'Θέση Κλειστού εικονονίδιου';
-?>
