@@ -32,7 +32,7 @@ function admintools_add_public_controller()
     }
   }
   else if ($conf['AdminTools']['public_quick_edit'] and
-      script_basename() == 'picture' and $picture['current']['added_by'] == $user['id']
+      script_basename() == 'picture' and $picture['current']['added_by'] == $user['id'] and !is_a_guest()
     )
   { // only "edit" button for photo owner
   }
@@ -241,6 +241,11 @@ function admintools_save_picture()
   global $page, $conf, $MultiView, $user, $picture;
 
   if (!isset($_GET['delete']) and !isset($_POST['action']) and @$_POST['action'] != 'quick_edit')
+  {
+    return;
+  }
+
+  if (is_a_guest())
   {
     return;
   }
