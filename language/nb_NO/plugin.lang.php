@@ -23,14 +23,14 @@
 $lang['Combine JS&CSS'] = 'Kombiner JS&amp;CSS';
 $lang['Debug languages'] = 'Feilsøkingspråk';
 $lang['Debug template'] = 'Feilsøking tema';
-$lang['Properties page'] = 'Egenskapersiden';
+$lang['Properties page'] = 'Egenskapssiden';
 $lang['Quick edit'] = 'Hurtigredigering';
 $lang['Revert'] = 'Omgjøre';
 $lang['Save'] = 'Lagre';
 $lang['Save visit in history'] = 'Lagre besøkshistorie';
 $lang['Saved'] = 'Lagret';
 $lang['Show SQL queries'] = 'Vis SQL spørringer';
-$lang['View as'] = 'Se alle';
+$lang['View as'] = 'Se som';
 $lang['Viewing as <b>%s</b>.'] = 'Se som <b>%s</b>.';
 $lang['Closed icon position'] = 'Låst ikonposisjon';
 $lang['Give access to quick edit to photo owners even if they are not admin'] = 'Gi tilgang til bildets eier for hurtigredigering, selv om de ikke er admin';
