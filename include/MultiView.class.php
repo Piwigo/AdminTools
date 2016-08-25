@@ -226,7 +226,9 @@ class MultiView
       }
       if ($this->data['no_history'])
       {
-        add_event_handler('pwg_log_allowed', create_function('', 'return false;'));
+        $ret_false = create_function('', 'return false;');
+        add_event_handler('pwg_log_allowed', $ret_false);
+        add_event_handler('pwg_log_update_last_visit', $ret_false);
       }
 
       $this->save();
