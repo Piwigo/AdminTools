@@ -217,8 +217,17 @@ function admintools_add_admin_controller_setprefilter()
 
 function admintools_admin_prefilter($content)
 {
-  $search = '<a class="icon-brush tiptip" href="{$U_CHANGE_THEME}" title="{\'Switch to clear or dark colors for administration\'|translate}">{\'Change Admin Colors\'|translate}</a>';
-  $replace = '<span id="ato_container"><a class="icon-cog-alt" href="#">{\'Tools\'|translate}</a></span>';
+  if (version_compare(PHPWG_VERSION, '2.9', '>='))
+  {
+    $search = '<a href="{$U_LOGOUT}">';
+    $replace = '<span id="ato_container"><a href="#"><i class="icon-cog-alt"></i><span>{\'Tools\'|translate}</span></a></span>'.$search;
+  }
+  else
+  {
+    $search = '<a class="icon-brush tiptip" href="{$U_CHANGE_THEME}" title="{\'Switch to clear or dark colors for administration\'|translate}">{\'Change Admin Colors\'|translate}</a>';
+    $replace = '<span id="ato_container"><a class="icon-cog-alt" href="#">{\'Tools\'|translate}</a></span>';
+  }
+
   return str_replace($search, $replace, $content);
 }
 
