@@ -33,8 +33,7 @@ $lang['View as'] = 'Vis som';
 $lang['Viewing as <b>%s</b>.'] = 'Viser som <b>%s</b>.';
 $lang['Saved'] = 'Gemt';
 $lang['Closed icon position'] = 'Lukket-ikons placering';
-$lang['Give access to quick edit to photo owners even if they are not admin'] = 'Giv adgang til hurtigredigering for fotoejere, selv hvis de ikke er admin';
+$lang['Give access to quick edit to photo owners even if they are not admin'] = 'Giv adgang til hurtigredigering for fotoejere, selv hvis de ikke er administrator';
 $lang['Open toolbar by default'] = 'Åbn værktøjslinje som standard';
 $lang['left'] = 'venstre';
 $lang['right'] = 'højre';
-?>
