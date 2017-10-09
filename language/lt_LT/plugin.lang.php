@@ -28,7 +28,7 @@ $lang['Quick edit'] = 'Greitas redagavimas';
 $lang['Revert'] = 'Atstatyti';
 $lang['Save'] = 'Išsaugoti';
 $lang['Save visit in history'] = 'Vesti vizitų žurnalą';
-$lang['Show SQL queries'] = 'Rodyty SQL užklausas';
+$lang['Show SQL queries'] = 'Rodyti SQL užklausas';
 $lang['View as'] = 'Žiūrėti kaip';
 $lang['Viewing as <b>%s</b>.'] = 'Rodoma kaip <b>%s</b>.';
 $lang['Saved'] = 'Išsaugota';
@@ -37,4 +37,3 @@ $lang['Give access to quick edit to photo owners even if they are not admin'] = 
 $lang['Open toolbar by default'] = 'Atverti įrankių juostą pagal nutylėjimą';
 $lang['left'] = 'kairė';
 $lang['right'] = 'dešinė';
-?>
