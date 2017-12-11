@@ -34,3 +34,5 @@ $lang['View as'] = 'ดูในแบบ';
 $lang['Viewing as <b>%s</b>.'] = 'กำลังดูในแบบ <b>%s</b>.';
 $lang['left'] = 'ซ้าย';
 $lang['right'] = 'ขวา';
+$lang['Combine JS&CSS'] = 'รวมไฟล์ JS&amp;CSS';
+$lang['Open toolbar by default'] = 'เปิดแถบเครื่องมือเป็นค่าปกติ';
