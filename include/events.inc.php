@@ -114,7 +114,7 @@ SELECT id, name
       'author' =>             $picture['current']['author'],
       'level' =>              $picture['current']['level'],
       'date_creation' =>      substr($picture['current']['date_creation'], 0, 10),
-      'date_creation_time' => substr($picture['current']['date_creation'], 11, 5),
+      'date_creation_time' => substr($picture['current']['date_creation'], 11, 8),
       'tag_selection' =>      $tag_selection,
       );
   }
