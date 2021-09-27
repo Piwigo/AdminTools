@@ -6,6 +6,7 @@ Description: Do some admin task from the public pages
 Plugin URI: http://piwigo.org/ext/extension_view.php?eid=720
 Author: Piwigo team
 Author URI: http://piwigo.org
+Has Settings: webmaster
 */
 
 defined('PHPWG_ROOT_PATH') or die('Hacking attempt!');
@@ -40,7 +41,6 @@ else
 {
   add_event_handler('loc_begin_page_header', 'admintools_add_admin_controller_setprefilter');
   add_event_handler('loc_after_page_header', 'admintools_add_admin_controller');
-  add_event_handler('get_admin_plugin_menu_links', 'admintools_admin_link');
 }
 
 
@@ -50,14 +50,4 @@ function admintools_init()
   $conf['AdminTools'] = safe_unserialize($conf['AdminTools']);
 
   load_language('plugin.lang', ADMINTOOLS_PATH);
-}
-
-function admintools_admin_link($menu) 
-{
-  $menu[] = array(
-    'NAME' => 'Admin Tools',
-    'URL' => ADMINTOOLS_ADMIN,
-    );
-
-  return $menu;
 }
