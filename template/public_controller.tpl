@@ -106,7 +106,7 @@ AdminTools.multiView = {
     <li {if $ato.IS_REPRESENTATIVE}class="disabled"{/if}><a class="icon-ato-trophy set-representative ato-min-2" href="{$ato.U_SET_REPRESENTATIVE}">{'representative'|translate|ucfirst}</a></li>
   {/if}
   {if isset($ato.U_CADDIE)}
-    <li {if $ato.IS_IN_CADDIE}class="disabled"{/if}><a class="icon-flag add-caddie ato-min-2" href="{$ato.U_CADDIE}">{'Add to caddie'|translate}</a></li>
+    <li {if isset($ato.IS_IN_CADDIE) and $ato.IS_IN_CADDIE }class="disabled"{/if}><a class="icon-flag add-caddie ato-min-2" href="{$ato.U_CADDIE}">{'Add to caddie'|translate}</a></li>
   {/if}
   {if isset($ato.IS_CATEGORY)}
     <li><a class="icon-plus-circled ato-min-2" href="{$ato.U_SITE_ADMIN}photos_add&amp;album={$ato.CATEGORY_ID}">{'Add Photos'|translate}</a></li>
