@@ -107,6 +107,7 @@ SELECT id, name
 ;';
     $tag_selection = get_taglist($query);
 
+    (!isset($picture['current']['date_creation'])) ? $picture['current']['date_creation'] = "" : false;
     $tpl_vars['QUICK_EDIT'] = array(
       'img' =>                $picture['current']['derivatives']['square']->get_url(),
       'name' =>               $picture['current']['name'],
