@@ -159,7 +159,7 @@ AdminTools.multiView = {
 
       {if isset($ato.IS_PICTURE)}
         <label for="quick_edit_author">{'Author'|translate}</label>
-        <input type="text" name="author" id="quick_edit_author" value="{$ato.QUICK_EDIT.author|escape:html}">
+        <input type="text" name="author" id="quick_edit_author" {if isset($ato.QUICK_EDIT.author)} value="{$ato.QUICK_EDIT.author|escape:html}" {/if}>
 
         <label for="quick_edit_date_creation">{'Creation date'|translate}</label>
         <input type="text" name="date_creation" id="quick_edit_date_creation" class="datepicker" value="{$ato.QUICK_EDIT.date_creation}">

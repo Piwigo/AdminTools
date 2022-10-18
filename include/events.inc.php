@@ -298,8 +298,8 @@ function admintools_save_picture()
     include_once(PHPWG_ROOT_PATH . 'admin/include/functions.php');
 
     $data = array(
-      'name' =>   $_POST['name'],
-      'author' => $_POST['author'],
+      'name' =>   pwg_db_real_escape_string($_POST['name']),
+      'author' => pwg_db_real_escape_string($_POST['author']),
       );
 
     if ($MultiView->is_admin())
@@ -309,7 +309,7 @@ function admintools_save_picture()
 
     if ($conf['allow_html_descriptions'])
     {
-      $data['comment'] = @$_POST['comment'];
+      $data['comment'] = pwg_db_real_escape_string(@$_POST['comment']);
     }
     else
     {
