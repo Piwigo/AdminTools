@@ -78,7 +78,7 @@ AdminTools.multiView = {
       <ul>
         <li><a class="icon-home" href="{$ato.U_SITE_ADMIN}intro">{'Home'|translate}</a></li>
         <li><a class="icon-picture" href="{$ato.U_SITE_ADMIN}batch_manager">{'Photos'|translate}</a></li>
-        <li><a class="icon-sitemap" href="{$ato.U_SITE_ADMIN}cat_list">{'Albums'|translate}</a></li>
+        <li><a class="icon-sitemap" href="{$ato.U_SITE_ADMIN}albums">{'Albums'|translate}</a></li>
         <li><a class="icon-users" href="{$ato.U_SITE_ADMIN}user_list">{'Users'|translate}</a></li>
         <li><a class="icon-puzzle" href="{$ato.U_SITE_ADMIN}plugins">{'Plugins'|translate}</a></li>
         <li><a class="icon-wrench" href="{$ato.U_SITE_ADMIN}maintenance">{'Tools'|translate}</a></li>
