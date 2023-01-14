@@ -34,3 +34,6 @@ $lang['Saved'] = '저장됨';
 $lang['Show SQL queries'] = 'SQL 쿼리 보기';
 $lang['left'] = '왼쪽';
 $lang['right'] = '오른쪽';
+$lang['Closed icon position'] = '닫음 아이콘 위치';
+$lang['View as'] = '보기방식';
+$lang['Viewing as <b>%s</b>.'] = '<b>%s</b> 방식으로 보기';
