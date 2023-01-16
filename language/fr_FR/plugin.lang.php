@@ -12,10 +12,8 @@ $lang['Saved'] = 'Sauvegardé';
 $lang['Save visit in history'] = 'Sauvegarder la viste dans l\'historique';
 $lang['Show SQL queries'] = 'Afficher les requêtes SQL';
 $lang['View as'] = 'Voir en tant que';
-$lang['Closed icon position'] = 'Position the l\'icône fermé';
+$lang['Closed icon position'] = 'Position de l\'icône fermé';
 $lang['Give access to quick edit to photo owners even if they are not admin'] = 'Autoriser l\'accès à l\'édition rapide aux propriétaires des photos même s\'ils ne sont pas admin';
 $lang['Open toolbar by default'] = 'Ouvrir la barre par défaut';
 $lang['left'] = 'gauche';
 $lang['right'] = 'droite';
-
-?>
