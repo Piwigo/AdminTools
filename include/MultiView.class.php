@@ -194,6 +194,7 @@ class MultiView
       // lang
       if (isset($_GET['ato_lang']))
       {
+        check_input_parameter('ato_lang', $_GET, false, '/^[a-z]{2,3}_[A-Z]{2}$/');
         $this->data['lang'] = $_GET['ato_lang'];
       }
       $user['language'] = $this->data['lang'];
