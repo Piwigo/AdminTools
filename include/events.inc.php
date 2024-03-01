@@ -164,6 +164,7 @@ SELECT * FROM '.IMAGES_TABLE.'
   $template->assign(array(
     'ADMINTOOLS_PATH' => './plugins/' . ADMINTOOLS_ID .'/',
     'ato' => $tpl_vars,
+    'PWG_TOKEN' => get_pwg_token(),
   ));
 
   $template->set_filename('ato_public_controller', realpath(ADMINTOOLS_PATH . 'template/public_controller.tpl'));
@@ -296,6 +297,8 @@ function admintools_save_picture()
   if ($_POST['action'] == 'quick_edit')
   {
     include_once(PHPWG_ROOT_PATH . 'admin/include/functions.php');
+
+    check_pwg_token();
 
     $data = array(
       'name' =>   $_POST['name'],
