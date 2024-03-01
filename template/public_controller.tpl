@@ -45,7 +45,7 @@ AdminTools.multiView = {
 };
 {/if}
 
-{if $ato.DELETE_CACHE}
+{if isset($ato.DELETE_CACHE) and $ato.DELETE_CACHE}
   AdminTools.deleteCache();
 {/if}
   AdminTools.init({intval($ato.DEFAULT_OPEN)});
