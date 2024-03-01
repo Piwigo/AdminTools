@@ -301,8 +301,8 @@ function admintools_save_picture()
     check_pwg_token();
 
     $data = array(
-      'name' =>   $_POST['name'],
-      'author' => $_POST['author'],
+      'name' =>   (is_admin() and $conf['allow_html_descriptions']) ? $_POST['name'] : strip_tags($_POST['name']),
+      'author' => (is_admin() and $conf['allow_html_descriptions']) ? $_POST['author'] : strip_tags($_POST['author']),
       );
 
     if ($MultiView->is_admin())
@@ -310,7 +310,7 @@ function admintools_save_picture()
       $data['level'] = $_POST['level'];
     }
 
-    if ($conf['allow_html_descriptions'])
+    if (is_admin() and $conf['allow_html_descriptions'])
     {
       $data['comment'] = @$_POST['comment'];
     }
@@ -354,11 +354,13 @@ function admintools_save_category()
 
   if (@$_POST['action'] == 'quick_edit')
   {
+    check_pwg_token();
+
     $data = array(
-      'name' => $_POST['name'],
+      'name' => (is_admin() and $conf['allow_html_descriptions']) ? $_POST['name'] : strip_tags($_POST['name']),
       );
 
-    if ($conf['allow_html_descriptions'])
+    if (is_admin() and $conf['allow_html_descriptions'])
     {
       $data['comment'] = @$_POST['comment'];
     }
