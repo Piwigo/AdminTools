@@ -20,20 +20,20 @@
 // | Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, |
 // | USA.                                                                  |
 // +-----------------------------------------------------------------------+
-$lang['Debug template'] = 'デバッグ　テンプレート';
-$lang['Properties page'] = 'プロパティ　ページ';
-$lang['Quick edit'] = 'クイックエディット';
+$lang['Debug template'] = 'デバッグテンプレート';
+$lang['Properties page'] = 'プロパティーページ';
+$lang['Quick edit'] = 'クイック編集';
 $lang['Revert'] = '元に戻す';
 $lang['Save'] = '保存';
 $lang['Saved'] = '保存しました';
-$lang['Show SQL queries'] = 'SQL クエリーを参照する';
+$lang['Show SQL queries'] = 'SQLクエリーを表示する';
 $lang['left'] = '左';
 $lang['right'] = '右';
-$lang['Save visit in history'] = '訪問履歴の保存';
+$lang['Save visit in history'] = '訪問履歴を保存する';
 $lang['View as'] = '閲覧';
 $lang['Viewing as <b>%s</b>.'] = '<b>%s</b>として閲覧中';
 $lang['Open toolbar by default'] = 'デフォルトでツールバーを開く';
 $lang['Debug languages'] = 'デバッグ時の言語';
 $lang['Combine JS&CSS'] = 'JSとCSSを結合する';
-$lang['Give access to quick edit to photo owners even if they are not admin'] = '写真のオーナ（持ち主）に、quick editの権限をadmin権限がなくても与える';
+$lang['Give access to quick edit to photo owners even if they are not admin'] = '写真のオーナーに、クイック編集の権限を管理者権限がなくても与える';
 $lang['Closed icon position'] = 'クローズアイコンの位置';
