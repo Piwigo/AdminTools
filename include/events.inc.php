@@ -305,7 +305,7 @@ function admintools_save_picture()
       'author' => (is_admin() and $conf['allow_html_descriptions']) ? $_POST['author'] : strip_tags($_POST['author']),
       );
 
-    if ($MultiView->is_admin())
+    if ($MultiView->is_admin() and isset($_POST['level']))
     {
       $data['level'] = $_POST['level'];
     }
